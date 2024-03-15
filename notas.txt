@@ -1,0 +1,28 @@
+ejemplo Activo
+{
+  "id": 5,
+  "serie": 400,
+  "numInv": 60,
+  "tipo": "Computadora",
+  "desc": "Nueva computadora portátil",
+  "ubicacion": "Oficina 1",
+  "responsable": "Juan Perez",
+  "imagen": "ruta/a/la/imagen.jpg"
+}
+
+ejemplo responsable
+{
+  "id": 2,
+  "numEmpleado": 303,
+  "Nombre": "Maria Luisa Gonzalez Ramirez",
+  "ActivosAsociados": [],
+  "ImagenResponsable": "ruta/a/la/imagen.jpg"
+}
+
+ejemplo unicacion
+{
+  "id": 3,
+  "descripcion": "Oficina principal",
+  "activosAsociados": [],
+  "imagen": "ruta/a/la/imagen.jpg"
+}
