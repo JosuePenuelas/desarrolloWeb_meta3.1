@@ -36,7 +36,12 @@ let findByNumeroEmpleado = function (numEmpleado) {
 }
 
 let agregar = function (responsable) {
-    dbResponsables.push(responsable);
+    if (!dbResponsables.some(item => item.id === responsable.id)) {
+        dbResponsables.push(responsable);
+        console.log("Activo agregado correctamente.");
+    } else {
+        console.log("El activo ya existe en la base de datos.");
+    }
 }
 
 let actualizar = function (id, nuevoResponsable) {

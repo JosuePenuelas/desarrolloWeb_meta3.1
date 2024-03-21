@@ -27,7 +27,12 @@ let findById = function (id) {
 }
 
 let agregar = function (ubicacion) {
-    dbUbicaciones.push(ubicacion)
+    if (!dbUbicaciones.some(item => item.id === ubicacion.id)) {
+        dbUbicaciones.push(ubicacion);
+        console.log("Activo agregado correctamente.");
+    } else {
+        console.log("El activo ya existe en la base de datos.");
+    }
 }
 
 let actualizar = function (id, nuevaUbicacion) {

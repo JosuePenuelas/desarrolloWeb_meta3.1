@@ -42,7 +42,12 @@ let findByNumeroDeSerie = function (numSerie) {
 }
 
 let agregar = function (activo) {
-    dbActivos.push(activo)
+    if (!dbActivos.some(item => item.id === activo.id)) {
+        dbActivos.push(activo);
+        console.log("Activo agregado correctamente.");
+    } else {
+        console.log("El activo ya existe en la base de datos.");
+    }
 }
 
 let actualizar = function (id, nuevoActivo) {
